@@ -1,21 +1,15 @@
 +++
 title = "Hello World Project"
-description = "A simple demo project showcasing tabi's project features"
-weight = 1
-template = "page.html"
+description = "A simple demo project showcasing Linkita's project features"
+template = "pages.html"
 
 [taxonomies]
 tags = ["meta"]
-
-[extra]
-local_image = "img/profile.webp"
 +++
 
-A minimal project to demonstrate how project pages work in tabi. This template supports Markdown formatting, code blocks, and more.
+A minimal project to demonstrate how project pages work in Linkita. This template supports Markdown formatting, code blocks, and more.
 
-{{ admonition(type="tip", text="The project image is set in the `[extra]` section of the page, as either `local_image` or `remote_image` (for an URL).") }}
-
-#### [View Source](https://github.com/welpo/tabi-start){.centered-text}
+## [View Source](https://github.com/salif/linkita-start)
 
 ## Features showcase
 

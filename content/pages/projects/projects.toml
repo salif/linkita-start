@@ -1,0 +1,8 @@
+[[project]]
+name = "Hello World Project"
+desc = "A simple demo project showcasing Linkita&apos;s project features"
+tags = ["meta"]
+links = [
+    { name = "homepage", url = "$BASE_URL/pages/projects/cool-project/", newtab = false },
+    { name = "source", url = "https://example.com" },
+]
