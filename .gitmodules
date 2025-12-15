@@ -1,5 +1,5 @@
 [submodule "linkita"]
 	path = themes/linkita
 	url = https://codeberg.org/salif/linkita.git
-	branch = linkita
+	branch = v4
 	ignore = untracked
