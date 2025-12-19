@@ -1,3 +1,7 @@
+# IMPORTANT: please replace all placeholders 
+# in this file that start with "YOUR_", such as "YOUR_URL.TLD", 
+# "YOUR_USERNAME", "YOUR_SITE_TITLE", etc., with your actual data.
+
 # The base URL of the site; the only required configuration variable.
 base_url = "https://YOUR_URL.TLD"
 
@@ -55,10 +59,10 @@ author = "YOUR_USERNAME"
 # The default language; used in feeds.
 default_language = "en"
 
-# [languages.en]
+# Default language is English
 
 # The site title and description; used in feeds by default.
-title = "site title"
+title = "YOUR_SITE_TITLE"
 description = "YOUR_SITE_DESCRIPTION"
 
 # When set to "true", a search index is built from the pages and section
@@ -90,7 +94,7 @@ taxonomies = [
 # You can define language specific config values and translations:
 # title, description, generate_feeds, feed_filenames, taxonomies, build_search_index
 # as well as its own search configuration and translations (see above for details on those)
-# [languages]
+#
 # For example
 # [languages.fr]
 # title = "Mon blog"
@@ -349,7 +353,7 @@ avatar_invert = false
 
 # Profile name.
 # Default value: the username
-name = "YOUR NAME"
+name = "YOUR_NAME"
 
 # Profile bio.
 # Supports Markdown.
@@ -387,8 +391,8 @@ since = 2026
 # No default value. Supports "$BASE_URL".
 license_url = "https://creativecommons.org/licenses/by-sa/4.0/deed"
 
-# Replace "Your Name" with your name and "CC BY-SA 4.0" with the name of the license you want.
-copyright = "&copy; $YEAR Your Name &vert; [CC BY-SA 4.0]($LICENSE_URL)"
+# Replace "YOUR_NAME" with your name and "CC BY-SA 4.0" with the name of the license you want.
+copyright = "&copy; $YEAR YOUR_NAME &vert; [CC BY-SA 4.0]($LICENSE_URL)"
 
 # Language specific options
 # For English

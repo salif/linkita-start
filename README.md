@@ -35,3 +35,11 @@ Refer to the [Zola documentation](https://www.getzola.org/documentation/deployme
 ```bash
 git submodule update --remote themes/linkita
 ```
+
+## Changing the theme repository
+
+If you prefer to use the GitHub mirror or your own fork of the theme, you can update the submodule URL:
+
+```bash
+git submodule set-url themes/linkita https://github.com/salif/linkita.git
+```
