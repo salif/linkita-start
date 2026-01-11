@@ -43,3 +43,24 @@ If you prefer to use the GitHub mirror or your own fork of the theme, you can up
 ```bash
 git submodule set-url themes/linkita https://github.com/salif/linkita.git
 ```
+
+## Syntax highlighting
+
+Users with Zola versions prior to 0.22.0 who want to use syntax highlighting need to remove the
+`[markdown.highlighting]` block in `config.toml` and add the following code:
+
+```toml
+# Configuration of the Markdown rendering
+[markdown]
+# When set to "true", all code blocks are highlighted.
+highlight_code = true
+
+# When set to "true", missing highlight languages are treated as errors. Defaults to false.
+error_on_missing_highlight = false
+
+# A list of directories used to search for additional `.sublime-syntax` and `.tmTheme` files.
+extra_syntaxes_and_themes = []
+
+# The theme to use for code highlighting.
+highlight_theme = "boron"
+```
