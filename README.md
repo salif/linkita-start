@@ -7,16 +7,16 @@ Start blogging in minutes with [Zola](https://www.getzola.org/) and [Linkita](ht
 ## Quick start
 
 1. On the top right of this page, click "Use this template" → "Create a new repository"
-2. Replace placeholders in `content/_index.md` and `config.toml`
-3. Save your profile photo to `static/profile.png` (or change the path to your image in `config.toml`)
+2. Replace placeholders in `content/_index.md` and `zola.toml`
+3. Save your profile photo to `static/profile.png` (or change the path to your image in `zola.toml`)
 4. Start writing in `content/blog/`. See `content/blog/hello.md` for an example
 
 **Note**: an error like `Tried to build search index for language ko which is not supported`,
 means Zola does not support search for that language.
-To disable search, set `build_search_index = false` in `config.toml`
+To disable search, set `build_search_index = false` in `zola.toml`
 
 > [!TIP]
-> Take a look through `config.toml` to customise further.
+> Take a look through `zola.toml` to customise further.
 
 ## Local development
 
@@ -46,8 +46,10 @@ git submodule set-url themes/linkita https://github.com/salif/linkita.git
 
 ## Syntax highlighting
 
-Users with Zola versions prior to 0.22.0 who want to use syntax highlighting need to remove the
-`[markdown.highlighting]` block in `config.toml` and add the following code:
+> [!NOTE]
+> If you are using Zola versions prior to **0.22.1**, rename `zola.toml` to `config.toml`.
+
+For Zola versions older than **0.22.0**, syntax highlighting is configured directly under the `[markdown]` block. Replace the `[markdown.highlighting]` section with the following:
 
 ```toml
 # Configuration of the Markdown rendering
