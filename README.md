@@ -1,8 +1,8 @@
 # Linkita start
 
-Start blogging in minutes with [Zola](https://www.getzola.org/) and [Linkita](https://codeberg.org/salif/linkita).
+Start blogging in minutes with [Zola](https://www.getzola.org/) and [Linkita](https://github.com/salif/linkita).
 
-![Screenshot of Linkita theme](https://cdn.jsdelivr.net/gh/salif/linkita@linkita/screenshot.png)
+![Screenshot of Linkita theme](https://cdn.jsdelivr.net/gh/salif/linkita@main/screenshot.png)
 
 ## Quick start
 
@@ -36,13 +36,7 @@ Refer to the [Zola documentation](https://www.getzola.org/documentation/deployme
 git submodule update --remote themes/linkita
 ```
 
-## Changing the theme repository
-
-If you prefer to use the GitHub mirror or your own fork of the theme, you can update the submodule URL:
-
-```bash
-git submodule set-url themes/linkita https://github.com/salif/linkita.git
-```
+See [managing versions](https://github.com/salif/linkita#managing-versions).
 
 ## Syntax highlighting
 

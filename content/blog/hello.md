@@ -21,4 +21,4 @@ console.log("Hello, World!")
 * Add images
 * And much more!
 
-Check [Linkita's documentation](https://codeberg.org/salif/linkita) to learn about all features.
+Check [Linkita's documentation](https://github.com/salif/linkita) to learn about all features.
