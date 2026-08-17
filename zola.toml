@@ -174,11 +174,11 @@ style = "inline"
 # Selecting a theme is always required: you have a choice between single (1) or dual themes (2).
 # Only outputting CSS classes like before 0.22 is not possible anymore.
 # 1. If you use a single theme, put its name here. See the syntax highlighting page for the possible choices.
-theme = "catppuccin-mocha"
+# theme = ""
 
 # 2. If you want light/dark themes, use the 2 fields below instead. See the syntax highlighting page for the possible choices.
-light_theme = ""
-dark_theme = ""
+light_theme = "light-plus"
+dark_theme = "github-dark-default"
 
 # A list of files for additional JSON TextMate grammars
 extra_grammars = []
@@ -272,11 +272,6 @@ menu_i18n = false
 # Default value: false
 disable_default_favicon = false
 
-# If you want to implement the JS code
-# yourself, set to true and use the inject support.
-# Default value: false
-disable_javascript = false
-
 # Use a CDN for libraries like KaTeX.
 # Default value: false
 use_cdn = false
@@ -299,6 +294,12 @@ page_summary_on_paginator = false
 # Default value: false
 invert_page_navigation = false
 
+# Enable table of contents on all pages.
+# If not set, toc is enabled only on posts.
+# If set to false, toc is disabled on all pages.
+# Type: boolean or object
+toc = true
+
 # Header buttons.
 # Valid values:
 #  "site_title", "home_button", "theme_select", "theme_button",
@@ -315,12 +316,6 @@ invert_page_navigation = false
 
 # What info is shown for posts on paginators.
 # page_info_on_paginator = [{ when="date" }, { when="reading_time" }]
-
-# Enable table of contents on all pages.
-# If not set, toc is enabled only on posts.
-# If set to false, toc is disabled on all pages.
-# Type: boolean or object
-# toc = true
 
 # Style config
 [extra.style]
@@ -343,7 +338,7 @@ header_dark_color = "#27272a"
 [extra.menus]
 header_links = [
   { url = "@/pages/archive.md", name = "Archive" },
-  { url = "$BASE_URL/tags/", name = "Tags" },
+  { url = "@base/tags/", name = "Tags" },
   { url = "@/pages/projects/_index.md", name = "Projects" },
 ]
 
@@ -372,16 +367,14 @@ bio = "Welcome to my personal site!"
 # Social icons.
 # "name" should be the file name of "static/icons/*.svg" or
 # the icon name of https://simpleicons.org/
-# "url" supports "$BASE_URL".
+# "url" supports "@base".
 # Other variables: "urls", "title", "titles".
 social = [
     { name = "bluesky", url = "https://bsky.app/profile/username" },
     { name = "github", url = "https://github.com/username" },
     { name = "email", url = "mailto:example@example.com" },
-    { name = "rss", url = "$BASE_URL/atom.xml" },
+    { name = "rss", url = "@base/atom.xml" },
 ]
-
-[extra.profiles.YOUR_USERNAME.open_graph]
 
 # Set if you have a Fediverse account.
 #  handle – Your Fediverse handle.
@@ -391,6 +384,14 @@ social = [
 # { handle = "me", domain = "mastodon.social" }
 fediverse_creator = { handle = "", domain = "" }
 
+# The URL for Open Graph image.
+# Uses the get_url function, does not support @base.
+og_image = ""
+
+# A description of what is in the Open Graph image.
+# Default value: ""
+og_image_alt = ""
+
 # The page footer
 [extra.footer]
 # Replace with the correct year.
@@ -398,7 +399,7 @@ fediverse_creator = { handle = "", domain = "" }
 since = 2026
 
 # Replace with the URL of the license you want.
-# No default value. Supports "$BASE_URL".
+# No default value. Supports "@base".
 license_url = "https://creativecommons.org/licenses/by-sa/4.0/deed"
 
 # Replace "YOUR_NAME" with your name and "CC BY-SA 4.0" with the name of the license you want.
@@ -411,8 +412,8 @@ copyright = "&copy; $YEAR YOUR_NAME &vert; [CC BY-SA 4.0]($LICENSE_URL)"
 # No default value.
 locale = "en_US"
 
-# See chrono docs:
-#  https://docs.rs/chrono/0.4.42/chrono/format/strftime/
+# See docs:
+#  https://docs.rs/jiff/latest/jiff/fmt/strtime/index.html#conversion-specifications
 # Default value: "%F"
 date_format = "%Y %b %-d"
 

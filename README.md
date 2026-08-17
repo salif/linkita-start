@@ -37,26 +37,3 @@ git submodule update --remote themes/linkita
 ```
 
 See [managing versions](https://github.com/salif/linkita#managing-versions).
-
-## Syntax highlighting
-
-> [!NOTE]
-> If you are using Zola versions prior to **0.22.1**, rename `zola.toml` to `config.toml`.
-
-For Zola versions older than **0.22.0**, syntax highlighting is configured directly under the `[markdown]` block. Replace the `[markdown.highlighting]` section with the following:
-
-```toml
-# Configuration of the Markdown rendering
-[markdown]
-# When set to "true", all code blocks are highlighted.
-highlight_code = true
-
-# When set to "true", missing highlight languages are treated as errors. Defaults to false.
-error_on_missing_highlight = false
-
-# A list of directories used to search for additional `.sublime-syntax` and `.tmTheme` files.
-extra_syntaxes_and_themes = []
-
-# The theme to use for code highlighting.
-highlight_theme = "boron"
-```

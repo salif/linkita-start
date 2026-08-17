@@ -1,7 +1,7 @@
 +++
 title = "Hello, World!"
 description = "My first post using the Linkita theme."
-date = "2093-02-16"
+date = 2093-02-16
 
 [taxonomies]
 tags = ["demo"]
