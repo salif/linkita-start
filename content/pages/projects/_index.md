@@ -1,8 +1,8 @@
 +++
 title = "Projects"
-description = ""
+# description = "Uncomment and set description"
 template = "pages.html"
 page_template = "pages.html"
 +++
 
-{{<projects path="projects.toml" format="toml" page={section} config />}}
+{{<projects path="projects.toml" format="toml" page={section} config={config} />}}

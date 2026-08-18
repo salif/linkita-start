@@ -382,15 +382,15 @@ social = [
 #  url – Your Fediverse account URL. Optional.
 # Example for @me@mastodon.social:
 # { handle = "me", domain = "mastodon.social" }
-fediverse_creator = { handle = "", domain = "" }
+# fediverse_creator = { handle = "", domain = "" }
 
 # The URL for Open Graph image.
 # Uses the get_url function, does not support @base.
-og_image = ""
+# og_image = ""
 
 # A description of what is in the Open Graph image.
 # Default value: ""
-og_image_alt = ""
+# og_image_alt = ""
 
 # The page footer
 [extra.footer]

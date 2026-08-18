@@ -1,8 +1,8 @@
 +++
 title = "Blog"
-description = ""
+# description = "Uncomment and set description"
 template = "archive.html"
 transparent = true
 [extra]
-#date_format = "%b %d"
+date_format = "%b %d"
 +++

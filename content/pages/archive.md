@@ -1,6 +1,6 @@
 +++
 title = "Archive"
-description = ""
+# description = "Uncomment and set description"
 template = "archive.html"
 [extra]
 date_format = "%b %d"
