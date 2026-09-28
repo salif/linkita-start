@@ -416,7 +416,7 @@ locale = "en"
 
 # Uses different formats depending on whether `locale` is set or not.
 # See UTS-35 datetime patterns:
-#  https://unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table).
+#  https://unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table
 # Default value: "%F" (strftime) or "y MMM d" (UTS-35)
 date_format = "y MMM d"
 
